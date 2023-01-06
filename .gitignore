@@ -1,0 +1,11 @@
+\venv
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+*.csv
+*.json
+*.html
