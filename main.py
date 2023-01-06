@@ -1,9 +1,8 @@
 import copy
 import json
-import requests
 
-import numpy as np
 import pandas as pd
+import requests
 from scrapy.http import TextResponse
 
 
@@ -47,7 +46,7 @@ def main():
     df = pd.DataFrame()
 
     page = 1
-    while page <= 4:  # due to captcha
+    while page <= 3:  # due to captcha
         curr_url = f'https://www.kinopoisk.ru/lists/movies/popular/?page={page}'
         res = requests.get(curr_url)
         print(res.status_code)
